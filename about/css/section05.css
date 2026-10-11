@@ -1,0 +1,240 @@
+.content05 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  overflow: visible;
+}
+
+.ct05-header h1 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+
+.ct05-flow-container {
+  width: 100%;
+  height: 50svh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flow-area {
+  width: 45vw;
+  height: 45svh;
+  border-radius: 30px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 15px rgba(60, 60, 60, 0.4);
+  background: #121212;
+}
+
+.flow-inner {
+  width: 100%;
+  padding: 4vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.area-1 {
+  z-index: 1;
+}
+
+.area-2 {
+  z-index: 2;
+}
+
+.area-3 {
+  z-index: 3;
+}
+
+.area-4 {
+  z-index: 4;
+}
+
+.txt-area {
+  height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.txt-area h1 {
+  font-size: 2.3rem;
+  margin-bottom: 14svh;
+}
+
+.txt-area h3 {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+
+.txt-area p {
+  width: 300px;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  white-space: nowrap;
+  color: #aaa;
+}
+
+.img-area {
+  width: 400px;
+  height: auto;
+  position: relative;
+  margin-left: 50px;
+}
+
+.img-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.prof-bg {
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+.prof-sm-bg {
+  bottom: 0;
+  mask-image: linear-gradient(to bottom, black 90%, transparent 100%);
+}
+
+/*---- 모바일 부분 ----*/
+.ct05-mobile-list {
+  display: none;
+}
+
+/*------------*/
+/* 모바일 반응형 */
+/*------------*/
+@media (max-width: 768px) {
+  .content05 {
+    width: 90vw;
+    padding-bottom: 150px;
+  }
+
+  .ct05-header {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .ct05-flow-container {
+    display: none;
+  }
+
+  .ct05-mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    height: auto;
+  }
+
+  .prof-accordion {
+    box-shadow: 0 0 15px rgba(60, 60, 60, 0.4);
+    background: #121212;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .prof-accordion[open] .accordion-body {
+    animation: slideDown 0.5s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  }
+
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      max-height: 0; /* 높이 0에서 시작 */
+      transform: translateY(-10px); /* 살짝 위에서 내려옴 */
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    100% {
+      opacity: 1;
+      max-height: 500px; /* 충분히 큰 값으로 설정 (내용이 잘리지 않게) */
+      transform: translateY(0);
+      padding-top: 0;
+      padding-bottom: 30px; /* 원래 패딩값으로 복구 */
+    }
+  }
+
+  .prof-accordion summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 30px;
+    list-style: none;
+  }
+
+  .prof-accordion summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .summary-text {
+    display: flex;
+    text-align: left;
+  }
+
+  .prof-subject {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .prof-name {
+    font-size: 1rem;
+    color: #aaa;
+  }
+
+  .accordion-body {
+    padding: 0 20px 40px 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+  }
+
+  .prof-img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 30px auto 20px auto;
+  }
+
+  .prof-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
+
+  .prof-desc {
+    color: #d6d6d6;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    word-break: keep-all;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

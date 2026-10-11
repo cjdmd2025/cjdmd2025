@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공( )명 : 청주대학교 디지털미디어디자인학과 제5회 졸업전시회</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="./css/section01.css" />
+    <link rel="stylesheet" href="./css/section02.css" />
+    <link rel="stylesheet" href="./css/section03.css" />
+    <link rel="stylesheet" href="./css/section04.css" />
+    <link rel="stylesheet" href="./css/section05.css" />
+    <link rel="stylesheet" href="./css/section06.css" />
+    <!-- fontawesome 아이콘 링크 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!--<img src="./img/lg-bg.jpg" alt="" class="lg-bg head-bg" />-->
+    <!--<img src="./img/sm-bg.jpg" alt="" class="sm-bg" />-->
+    <!--header-->
+    <header>
+      <div class="head-container">
+        <div class="gnb-logo">
+          <a href="../index.html">
+            <img src="../img/whead_logo.png" alt="" />
+            <p>
+              청주대학교 디지털미디어디자인학과<br />
+              제5회 졸업전시회
+            </p>
+          </a>
+        </div>
+
+        <div class="gnb-menu">
+          <a href="../about/about.html" id="current">
+            <p>전시소개</p>
+          </a>
+          <a href="../project/project.html">
+            <p>프로젝트</p>
+          </a>
+          <a href="../designer/designer.html">
+            <p>디자이너</p>
+          </a>
+          <a href="../archive/archive.html">
+            <p>아카이브</p>
+          </a>
+          <button class="dmd2025" onclick="openExhibitionLink()">
+            <p>2025 전시도록 <i class="fa-solid fa-arrow-right"></i></p>
+          </button>
+
+          <script>
+            function openExhibitionLink() {
+              window.open("https://indd.adobe.com/view/5749a1d9-1fc3-4055-aea8-13508477998d", "_blank");
+            }
+          </script>
+        </div>
+
+        <div class="mobile-button">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+          </label>
+
+          <div class="mobile-menu">
+            <div class="mobile-item-container">
+              <a href="../about/about.html" class="mobile-menu-item">
+                <p>전시소개</p>
+              </a>
+              <a href="../project/project.html" class="mobile-menu-item">
+                <p>프로젝트</p>
+              </a>
+              <a href="../designer/designer.html" class="mobile-menu-item">
+                <p>디자이너</p>
+              </a>
+              <a href="../archive/archive.html" class="mobile-menu-item">
+                <p>아카이브</p>
+              </a>
+              <a class="mobile-menu-item" onclick="openExhibitionLink()">
+                <p>2025 전시도록</p>
+              </a>
+              <div class="mobile-menu-footer">
+                <img src="../img/m-menu.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--hero section-->
+    <section>
+      <div class="content01" id="content01">
+        <h1 class="title01" aria-label="공 괄호 명">
+          <span class="title01__char">공</span>
+          <span class="title01__paren">(</span>
+
+          <!-- 사진 슬롯 -->
+          <span class="title01__photo" id="c01-photo"></span>
+
+          <span class="title01__paren">)</span>
+          <span class="title01__char">명</span>
+        </h1>
+      </div>
+      <div class="field">
+        <div class="scroll-icon"></div>
+        SCROLL
+      </div>
+    </section>
+
+    <section>
+      <div class="content02" id="content02">
+        <div class="c02-wrap">
+          <!-- LEFT: 포스터 -->
+          <figure class="c02-poster">
+            <img id="c02-poster" src="./img/5th-poster.png" alt="공( )명 포스터" />
+            <figcaption class="sr-only">전시 포스터</figcaption>
+          </figure>
+
+          <!-- RIGHT: 카피/본문/버튼 -->
+          <div class="c02-copy">
+            <h2 class="c02-title">작은 떨림이 모여<br />큰 울림으로</h2>
+
+            <p class="c02-body">
+              돌아가는 원의 형태는 학생 개개인의 작은 떨림을 상징한다. 흔들림에 의해 <br class="pc-br" />흐려지고 있는
+              선들은 우리들의 다양한 움직임을 나타내며, 이 각각의 떨림은<br class="pc-br" />
+              결국 하나가 되어 큰 울림으로 공명한다.
+            </p>
+            <p class="c02-body2">
+              각 층 외곽의 흰 선들은 괄호를 형상화한 것으로 아직 채워지지 않은 우리들의<br class="pc-br" />
+              가능성을 표현했고, 흩뿌려진 노이즈는 은하 속의 밝은 별처럼 반짝이며 서로<br class="pc-br" />
+              다른 존재들이 모여 큰 울림 즉, 공명을 만들어내는 모습을 담고있다.
+            </p>
+
+            <button class="c02-btn" id="c02-download" type="button" aria-label="포스터 다운로드">
+              포스터 다운로드 <i class="fa-solid fa-download"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="content03" id="content03">
+      <h2 class="c03-title" aria-label="01명의 하나의 울림">
+        <span class="c03-paren">(</span> <span class="c03-num" id="c03-num">01</span> <span class="c03-paren">)</span>
+        <span class="c03-copy">명의 하나의 울림</span>
+      </h2>
+    </div>
+
+    <section>
+      <div class="content04" id="content04">
+        <img src="./img/lg-bg-2.jpg" alt="" class="lg-bg" style="transform: translateY(-130px)" />
+        <img src="./img/sm-bg-2.jpg" alt="" class="sm-bg" style="height: 800px" />
+        <!-- 상단 중앙 제목 -->
+        <h3 class="c04-top">졸업전시위원회</h3>
+
+        <div class="c04-top-profile-container">
+          <a href="../designer/designer44.html" class="profile-link">
+            <div class="top-profile">
+              <img src="../designer/img/44.png" alt="" />
+              <p><span class="profile-title">위원장</span> 조예리</p>
+              <svg class="profile-arrow" viewBox="0 0 24 24">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </div>
+          </a>
+
+          <a href="../designer/designer16.html" class="profile-link">
+            <div class="top-profile">
+              <img src="../designer/img/16.png" alt="" />
+              <p><span class="profile-title">부위원장 | 총무</span> 민유진</p>
+              <svg class="profile-arrow" viewBox="0 0 24 24">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <div class="c04-bg pc-only" id="c04-bg"></div>
+        <div class="c04-overlay pc-only"></div>
+        <hr class="c04-line" />
+
+        <div class="c04-content-wrapper pc-only">
+          <div class="c04-grid">
+            <!-- LEFT: 부서 버튼 -->
+            <div class="c04-left">
+              <ul class="c04-nav" id="c04-nav">
+                <li><button class="is-active" data-key="디피부">디피부</button></li>
+                <li><button data-key="기획부">기획부</button></li>
+                <li><button data-key="편집부">편집부</button></li>
+                <li><button data-key="멀티부">멀티부</button></li>
+                <li><button data-key="홍보부">홍보부</button></li>
+                <li><button data-key="포스터부">포스터부</button></li>
+              </ul>
+            </div>
+
+            <!-- CENTER: “의 공명” 트랙 (버튼 위치 따라다님) -->
+            <div class="c04-center" id="c04-center">
+              <div class="c04-of" id="c04-of">의 공명</div>
+            </div>
+
+            <div class="c04-preview-area">
+              <div id="member-preview" class="member-preview"></div>
+            </div>
+
+            <!-- RIGHT: 멤버 목록 -->
+            <div class="c04-right">
+              <ul class="c04-members" id="c04-members"></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="c04-mobile-wrapper mobile-only">
+          <details class="commitee-accordion">
+            <summary>
+              <div class="summary-bg">
+                <img src="./img/01.jpg" alt="" />
+              </div>
+              <span>디피부</span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </summary>
+            <div class="commitee-list">
+              <a href="../designer/designer30.html">
+                <div class="m-profile-img"><img src="../designer/img/30.png" alt="유은비" /></div>
+                <p><span class="role-badge">부장</span> 유은비</p>
+              </a>
+              <a href="../designer/designer39.html">
+                <div class="m-profile-img"><img src="../designer/img/39.png" alt="임희원" /></div>
+                <p><span class="role-badge">차장</span> 임희원</p>
+              </a>
+              <a href="../designer/designer8.html">
+                <div class="m-profile-img"><img src="../designer/img/8.png" alt="김보미" /></div>
+                <p>김보미</p>
+              </a>
+              <a href="../designer/designer13.html">
+                <div class="m-profile-img"><img src="../designer/img/13.png" alt="김현진" /></div>
+                <p>김현진</p>
+              </a>
+              <a href="../designer/designer19.html">
+                <div class="m-profile-img"><img src="../designer/img/19.png" alt="박서희" /></div>
+                <p>박서희</p>
+              </a>
+              <a href="../designer/designer23.html">
+                <div class="m-profile-img"><img src="../designer/img/23.png" alt="백진주" /></div>
+                <p>백진주</p>
+              </a>
+              <a href="../designer/designer31.html">
+                <div class="m-profile-img"><img src="../designer/img/31.png" alt="윤정원" /></div>
+                <p>윤정원</p>
+              </a>
+              <a href="../designer/designer34.html">
+                <div class="m-profile-img"><img src="../designer/img/34.png" alt="이연우" /></div>
+                <p>이연우</p>
+              </a>
+              <a href="../designer/designer42.html">
+                <div class="m-profile-img"><img src="../designer/img/42.png" alt="조범규" /></div>
+                <p>조범규</p>
+              </a>
+              <a href="../designer/designer45.html">
+                <div class="m-profile-img"><img src="../designer/img/45.png" alt="최서윤" /></div>
+                <p>최서윤</p>
+              </a>
+            </div>
+          </details>
+
+          <details class="commitee-accordion">
+            <summary>
+              <div class="summary-bg">
+                <img src="./img/02.jpg" alt="" />
+              </div>
+              <span>기획부</span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </summary>
+            <div class="commitee-list">
+              <a href="../designer/designer5.html">
+                <div class="m-profile-img"><img src="../designer/img/5.png" alt="김도희" /></div>
+                <p>김도희</p>
+              </a>
+              <a href="../designer/designer22.html">
+                <div class="m-profile-img"><img src="../designer/img/22.png" alt="반상우" /></div>
+                <p>반상우</p>
+              </a>
+              <a href="../designer/designer10.html">
+                <div class="m-profile-img"><img src="../designer/img/10.png" alt="김윤주" /></div>
+                <p>김윤주</p>
+              </a>
+              <a href="../designer/designer12.html">
+                <div class="m-profile-img"><img src="../designer/img/12.png" alt="김현지" /></div>
+                <p>김현지</p>
+              </a>
+              <a href="../designer/designer20.html">
+                <div class="m-profile-img"><img src="../designer/img/20.png" alt="박순후" /></div>
+                <p>박순후</p>
+              </a>
+              <a href="../designer/designer25.html">
+                <div class="m-profile-img"><img src="../designer/img/25.png" alt="손예진" /></div>
+                <p>손예진</p>
+              </a>
+              <a href="../designer/designer38.html">
+                <div class="m-profile-img"><img src="../designer/img/38.png" alt="이현서" /></div>
+                <p>이현서</p>
+              </a>
+            </div>
+          </details>
+
+          <details class="commitee-accordion">
+            <summary>
+              <div class="summary-bg">
+                <img src="./img/03.jpg" alt="" />
+              </div>
+              <span>편집부</span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </summary>
+            <div class="commitee-list">
+              <a href="../designer/designer41.html">
+                <div class="m-profile-img"><img src="../designer/img/41.png" alt="정유민" /></div>
+                <p>정유민</p>
+              </a>
+              <a href="../designer/designer18.html">
+                <div class="m-profile-img"><img src="../designer/img/18.png" alt="박미소" /></div>
+                <p>박미소</p>
+              </a>
+              <a href="../designer/designer2.html">
+                <div class="m-profile-img"><img src="../designer/img/2.png" alt="고현희" /></div>
+                <p>고현희</p>
+              </a>
+              <a href="../designer/designer17.html">
+                <div class="m-profile-img"><img src="../designer/img/17.png" alt="박기연" /></div>
+                <p>박기연</p>
+              </a>
+              <a href="../project/project29.html">
+                <div class="m-profile-img"><img src="../designer/img/29.png" alt="왕뢰이저" /></div>
+                <p>왕뢰이저</p>
+              </a>
+              <a href="../designer/designer32.html">
+                <div class="m-profile-img"><img src="../designer/img/32.png" alt="이새연" /></div>
+                <p>이새연</p>
+              </a>
+              <a href="../designer/designer36.html">
+                <div class="m-profile-img"><img src="../designer/img/36.png" alt="이채민" /></div>
+                <p>이채민</p>
+              </a>
+              <a href="../designer/designer47.html">
+                <div class="m-profile-img"><img src="../designer/img/47.png" alt="황서진" /></div>
+                <p>황서진</p>
+              </a>
+            </div>
+          </details>
+
+          <details class="commitee-accordion">
+            <summary>
+              <div class="summary-bg">
+                <img src="./img/04.jpg" alt="" />
+              </div>
+              <span>멀티부</span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </summary>
+            <div class="commitee-list">
+              <a href="../designer/designer4.html">
+                <div class="m-profile-img"><img src="../designer/img/4.png" alt="권용우" /></div>
+                <p>권용우</p>
+              </a>
+              <a href="../designer/designer43.html">
+                <div class="m-profile-img"><img src="../designer/img/43.png" alt="조서영" /></div>
+                <p>조서영</p>
+              </a>
+              <a href="../designer/designer9.html">
+                <div class="m-profile-img"><img src="../designer/img/9.png" alt="김선정" /></div>
+                <p>김선정</p>
+              </a>
+              <a href="../designer/designer11.html">
+                <div class="m-profile-img"><img src="../designer/img/11.png" alt="김지수" /></div>
+                <p>김지수</p>
+              </a>
+              <a href="../designer/designer3.html">
+                <div class="m-profile-img"><img src="../designer/img/3.png" alt="곽초은" /></div>
+                <p>곽초은</p>
+              </a>
+              <a href="../designer/designer28.html">
+                <div class="m-profile-img"><img src="../designer/img/28.png" alt="오효진" /></div>
+                <p>오효진</p>
+              </a>
+              <a href="../designer/designer48.html">
+                <div class="m-profile-img"><img src="../designer/img/48.png" alt="황지원" /></div>
+                <p>황지원</p>
+              </a>
+            </div>
+          </details>
+
+          <details class="commitee-accordion">
+            <summary>
+              <div class="summary-bg">
+                <img src="./img/05.jpg" alt="" />
+              </div>
+              <span>홍보부</span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </summary>
+            <div class="commitee-list">
+              <a href="../designer/designer46.html">
+                <div class="m-profile-img"><img src="../designer/img/46.png" alt="최희선" /></div>
+                <p>최희선</p>
+              </a>
+              <a href="../designer/designer27.html">
+                <div class="m-profile-img"><img src="../designer/img/27.png" alt="오우진" /></div>
+                <p>오우진</p>
+              </a>
+              <a href="../designer/designer6.html">
+                <div class="m-profile-img"><img src="../designer/img/6.png" alt="김루나" /></div>
+                <p>김루나</p>
+              </a>
+              <a href="../designer/designer21.html">
+                <div class="m-profile-img"><img src="../designer/img/21.png" alt="박지수" /></div>
+                <p>박지수</p>
+              </a>
+              <a href="../designer/designer26.html">
+                <div class="m-profile-img"><img src="../designer/img/26.png" alt="양윤보" /></div>
+                <p>양윤보</p>
+              </a>
+              <a href="../designer/designer35.html">
+                <div class="m-profile-img"><img src="../designer/img/35.png" alt="이주연" /></div>
+                <p>이주연</p>
+              </a>
+              <a href="../designer/designer40.html">
+                <div class="m-profile-img"><img src="../designer/img/40.png" alt="정예원" /></div>
+                <p>정예원</p>
+              </a>
+            </div>
+          </details>
+
+          <details class="commitee-accordion">
+            <summary>
+              <div class="summary-bg">
+                <img src="./img/06.jpg" alt="" />
+              </div>
+              <span>포스터부</span>
+              <i class="fa-solid fa-chevron-down arrow"></i>
+            </summary>
+            <div class="commitee-list">
+              <a href="../designer/designer24.html">
+                <div class="m-profile-img"><img src="../designer/img/24.png" alt="서동현" /></div>
+                <p>서동현</p>
+              </a>
+              <a href="../designer/designer1.html">
+                <div class="m-profile-img"><img src="../designer/img/1.png" alt="강유림" /></div>
+                <p>강유림</p>
+              </a>
+              <a href="../designer/designer7.html">
+                <div class="m-profile-img"><img src="../designer/img/7.png" alt="김민정" /></div>
+                <p>김민정</p>
+              </a>
+              <a href="../designer/designer14.html">
+                <div class="m-profile-img"><img src="../designer/img/14.png" alt="나원호" /></div>
+                <p>나원호</p>
+              </a>
+              <a href="../designer/designer15.html">
+                <div class="m-profile-img"><img src="../designer/img/15.png" alt="노채린" /></div>
+                <p>노채린</p>
+              </a>
+              <a href="../designer/designer33.html">
+                <div class="m-profile-img"><img src="../designer/img/33.png" alt="이소현" /></div>
+                <p>이소현</p>
+              </a>
+              <a href="../designer/designer37.html">
+                <div class="m-profile-img"><img src="../designer/img/37.png" alt="이채현" /></div>
+                <p>이채현</p>
+              </a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content05">
+        <img src="./img/lg-bg-3.jpg" alt="" class="lg-bg prof-bg" />
+        <img src="./img/sm-bg-3.jpg" alt="" class="sm-bg prof-sm-bg" />
+        <div class="ct05-header">
+          <h1>교수진 소개</h1>
+        </div>
+        <div class="ct05-flow-container">
+          <!--장성복 교수님-->
+          <div class="flow-area area-1">
+            <div class="flow-inner">
+              <div class="txt-area">
+                <h1>서비스경험디자인</h1>
+                <h3>( 장성복 교수 )</h3>
+                <p>
+                  작은 떨림이 이번 전시를 통해 <br />
+                  사회로 나아가 큰 울림이 되기를 기대합니다.
+                </p>
+              </div>
+              <div class="img-area prof-1">
+                <img src="./img/profile/prof/1.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--유준오 교수님-->
+          <div class="flow-area area-2">
+            <div class="flow-inner">
+              <div class="txt-area">
+                <h1>인터랙션디자인</h1>
+                <h3>( 유준오 교수 )</h3>
+                <p>
+                  우리 디미디 학생들, 마지막까지 최선을 <br />
+                  다해줘서 고마워요. 너무나 수고 많았어요 :&#41;
+                </p>
+              </div>
+              <div class="img-area prof-2">
+                <img src="./img/profile/prof/2.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--이정선 교수님-->
+          <div class="flow-area area-3">
+            <div class="flow-inner">
+              <div class="txt-area">
+                <h1>인터페이스디자인</h1>
+                <h3>( 이정선 교수 )</h3>
+                <p>
+                  변화하는 디지털 흐름 속에서 대체 불가능한 크리에이터로 <br />
+                  성장하길 바라며, 힘찬 도약을 진심으로 응원합니다.
+                </p>
+              </div>
+              <div class="img-area prof-3">
+                <img src="./img/profile/prof/4.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <!--정수봉 교수님-->
+          <div class="flow-area area-4">
+            <div class="flow-inner">
+              <div class="txt-area">
+                <h1>고급프로그래밍</h1>
+                <h3>( 정수봉 교수 )</h3>
+                <p>
+                  이만큼의 노력을 앞으로 10년간 꾸준히 더 하다보면<br class="pc-br" />
+                  정말 멋진 사람이 되어 있을 겁니다. 항상 응원하겠습니다.
+                </p>
+              </div>
+              <div class="img-area prof-4">
+                <img src="./img/profile/prof/3.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--content05 모바일 부분-->
+        <div class="ct05-mobile-list">
+          <details class="prof-accordion">
+            <summary>
+              <div class="summary-text">
+                <span class="prof-subject">서비스경험디자인</span>
+              </div>
+
+              <span class="prof-name">( 장성복 교수 )</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="prof-img"><img src="./img/profile/prof/1.png" alt="장성복 교수" /></div>
+              <p class="prof-desc">
+                디지털 세계에 차원이 다른 디자이너로 <br />
+                성장하길 바라며 여러분들의 건승을 기원합니다.
+              </p>
+            </div>
+          </details>
+
+          <details class="prof-accordion">
+            <summary>
+              <div class="summary-text">
+                <span class="prof-subject">인터랙션디자인</span>
+              </div>
+              <span class="prof-name">( 유준오 교수 )</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="prof-img"><img src="./img/profile/prof/2.png" alt="유준오 교수" /></div>
+              <p class="prof-desc">
+                디지털 세계에 차원이 다른 디자이너로 <br />
+                성장하길 바라며 여러분들의 건승을 기원합니다.
+              </p>
+            </div>
+          </details>
+
+          <details class="prof-accordion">
+            <summary>
+              <div class="summary-text">
+                <span class="prof-subject">인터페이스디자인</span>
+              </div>
+              <span class="prof-name">( 이정선 교수 )</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="prof-img"><img src="./img/profile/prof/4.png" alt="이정선 교수" /></div>
+              <p class="prof-desc">
+                디지털 세계에 차원이 다른 디자이너로 <br />
+                성장하길 바라며 여러분들의 건승을 기원합니다.
+              </p>
+            </div>
+          </details>
+
+          <details class="prof-accordion">
+            <summary>
+              <div class="summary-text">
+                <span class="prof-subject">고급프로그래밍</span>
+              </div>
+              <span class="prof-name">( 정수봉 교수 )</span>
+            </summary>
+            <div class="accordion-body">
+              <div class="prof-img"><img src="./img/profile/prof/3.png" alt="정수봉 교수" /></div>
+              <p class="prof-desc">
+                이만큼의 노력을 앞으로 10년간 꾸준히 더 하다보면<br />
+                정말 멋진 사람이 되어 있을 겁니다.<br />항상 응원하겠습니다.
+              </p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <div class="content06">
+      <h2>1년의 여정, 하나의 공명</h2>
+      <div class="swiper-container">
+        <div class="ct06-braket-container">
+          <div class="ct06-braket-left">(</div>
+          <div class="ct06-braket-right">)</div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <iframe
+              width="1840"
+              height="1035"
+              src="https://www.youtube.com/embed/-uvIIrV_zIc"
+              title="[CJU DMD] Pick Up Lucky Message - 졸업전시를 앞둔 우리에게"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="1840"
+              height="1035"
+              src="https://www.youtube.com/embed/lPKgb_QeBCM"
+              title="[CJU DMD] 본심 준비하면서 (    )했던 썰 푼다 💬 &#39;본심 합격 꿀팁&#39; DMD #5월8일"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="1840"
+              height="1035"
+              src="https://www.youtube.com/embed/wuLDC9UHa1Q"
+              title="[CJU DMD] 저희 드디어 (   )해요 🎓 &#39;졸업 프로필 촬영 비하인드&#39; #8월25일 #8월26일"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="swiper-slide">
+            <iframe
+              width="1326"
+              height="746"
+              src="https://www.youtube.com/embed/QAk3KnSbKHA"
+              title="[CJU DMD]  포스터부 니네 똑바로 하고있니? | EP.1 위원장즈 첫 등장!  갑자기...불시점검?!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="1326"
+              height="746"
+              src="https://www.youtube.com/embed/37b2nJDXauk"
+              title="[CJU DMD] 기획부 회의실에 뜬 진상 관람객(?) | EP.2 위원장즈 등장! 갑자기...불시점검?!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe
+              width="1326"
+              height="746"
+              src="https://www.youtube.com/embed/iWOd3E1MEpM"
+              title="[CJU DMD] 편집부 부원은 냄새로 종이를 알아요... | EP.3 위원장즈 등장! 갑자기...불시점검?!"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <a
+        href="https://www.youtube.com/@%EC%B2%AD%EC%A3%BC%EB%8C%80%EB%94%94%EC%A7%80%ED%84%B8%EB%AF%B8%EB%94%94%EC%96%B4%EB%94%94"
+        target="_blank"
+      >
+        <button id="youtubeBtn">유튜브 채널 바로가기<i class="fa-solid fa-angle-right"></i></button>
+      </a>
+    </div>
+
+    <footer>
+      <div class="foot-container">
+        <div class="bottom-footer">
+          <div class="foot-left">
+            <img src="../img/foot_logo.png" alt="" />
+            <p>청주대학교 디지털미디어디자인학과<br />제5회 졸업전시회</p>
+          </div>
+          <div class="foot-right">
+            <div class="exh-info">
+              <div class="info-left">
+                <p>전시공간</p>
+                <p>전시일정</p>
+                <p>인스타그램</p>
+                <p>문의전화</p>
+              </div>
+              <div class="info-right">
+                <p>충북 청주시 청원구 안덕벌로 19번길 116</p>
+                <p>2025. 12. 12 — 12. 15</p>
+                <p>@cjudmd_2025</p>
+                <p>043 - 229 - 8660(학과사무실)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-row">
+          <p class="copyright">© 2025, Department of Digital Media Design, Cheongju University. All rights reserved.</p>
+          <div class="sns-icons">
+            <a href="https://youtube.com/channel/UC5275bIPKnUuTG0onFeFsLw?si=ReOEsoZA_fMy-Yib" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.instagram.com/cjudmd_2025/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.cju.ac.kr/dmd/index.do" target="_blank" id="dmdlogo"
+              ><img src="../img/department.png" alt="" width="45px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- GSAP core -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="../js/smooth-scroll.js"></script>
+    <script src="./js/about.js" defer></script>
+  </body>
+</html>
