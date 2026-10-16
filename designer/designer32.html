@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공( )명 : 청주대학교 디지털미디어디자인학과 제5회 졸업전시회</title>
+
+    <!-- 공통 -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- 전용 -->
+    <link rel="stylesheet" href="./css/designer-detail.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <div class="gnb-logo">
+          <a href="../index.html">
+            <img src="../img/whead_logo.png" alt="" />
+            <p>
+              청주대학교 디지털미디어디자인학과<br />
+              제5회 졸업전시회
+            </p>
+          </a>
+        </div>
+
+        <div class="gnb-menu">
+          <a href="../about/about.html">
+            <p>전시소개</p>
+          </a>
+          <a href="../project/project.html">
+            <p>프로젝트</p>
+          </a>
+          <a href="../designer/designer.html" id="current">
+            <p>디자이너</p>
+          </a>
+          <a href="../archive/archive.html">
+            <p>아카이브</p>
+          </a>
+          <button class="dmd2025" onclick="openExhibitionLink()">
+            <p>2025 전시도록 <i class="fa-solid fa-arrow-right"></i></p>
+          </button>
+
+          <script>
+            function openExhibitionLink() {
+              window.open("https://indd.adobe.com/view/5749a1d9-1fc3-4055-aea8-13508477998d", "_blank");
+            }
+          </script>
+        </div>
+
+        <div class="mobile-button">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+          </label>
+
+          <div class="mobile-menu">
+            <div class="mobile-item-container">
+              <a href="../about/about.html" class="mobile-menu-item">
+                <p>전시소개</p>
+              </a>
+              <a href="../project/project.html" class="mobile-menu-item">
+                <p>프로젝트</p>
+              </a>
+              <a href="../designer/designer.html" class="mobile-menu-item">
+                <p>디자이너</p>
+              </a>
+              <a href="../archive/archive.html" class="mobile-menu-item">
+                <p>아카이브</p>
+              </a>
+              <a class="mobile-menu-item" onclick="openExhibitionLink()">
+                <p>2025 전시도록</p>
+              </a>
+              <div class="mobile-menu-footer">
+                <img src="../img/m-menu.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="content01">
+        <div class="ct01-content">
+          <div class="ct01-left">
+            <button class="back">
+              <a href="./designer.html"> <i class="fa-solid fa-arrow-left"></i> 뒤로가기 </a>
+            </button>
+            <div class="profile">
+              <!--스프레드시트 가장 왼쪽에 있는 번호로 png파일 이름 변경하기 / 강유림일 경우 -> './img/handwriting/1.png'-->
+              <img src="./img/profile/32.png" alt="" />
+            </div>
+          </div>
+
+          <div class="ct01-right">
+            <div class="ct01-right-header">
+              <!--스프레드시트 가장 왼쪽에 있는 번호로 png파일 이름 변경하기 / 강유림일 경우 -> './img/handwriting/1.png'-->
+              <p>나는 &#40; <img src="./img/handwriting/32.png" alt="" /> &#41; 로 공명한다.</p>
+            </div>
+
+            <!----------------->
+            <!--수정 부분 start-->
+            <!----------------->
+            <div class="ct01-right-name">
+              <p>
+                <!--한글 이름 수정-->
+                이새연
+                <span class="name-en">
+                  <!--영문 이름 / 영문 이름은 그냥 복붙만 해두면 됨 나중에 CSS로 처리할거-->lee sae-yeon
+                </span>
+              </p>
+            </div>
+
+            <!--디자이너 세부 정보 / 보내준 스프레드시트 보고 작성하면 됨-->
+            <div class="ct01-right-info">
+              <h4>이메일</h4>
+
+              <!-- 이메일 수정 부분 ↓ -->
+              <p>saeyeon128@gmail.com</p>
+              <h4>인스타그램</h4>
+
+              <!-- 인스타그램 아이디 수정 부분 ↓ -->
+              <a href="https://www.instagram.com/s_yeon128/" target="_blank"><p>@s_yeon128</p></a>
+              <h4>팀원</h4>
+
+              <!-- 팀원 수정 부분 ↓ / 팀 프로젝트 별로 따로 묶어놓은 부분 있으니 그거 보고 작성 / 1인팀일 경우 '-' 표시 -->
+              <p>박기연, 이채현</p>
+            </div>
+
+            <!--졸업전시 소감 작성 부분 / br태그 작성 없이 그냥 복붙 ㄱㄱ-->
+            <div class="ct01-right-desc">
+              <p>
+                각자의 자리에서 최선을 다해 밤을 지새우고, 수없이 부딪히며 서로의 빈틈을 채워 준 덕분에 여기까지
+                <br class="pc-br" />
+                올 수 있었습니다. 오늘의 배움을 발판 삼아 더 단단하게 나아가겠습니다!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- content02는 일단 냅두기, 수요일 교수님 컨펌 이후에 레이아웃 수정하던가 할듯-->
+    <section>
+      <div class="content02">
+        <div class="ct02-container">
+          <div class="ct02-header">
+            <h1>전시 목록</h1>
+          </div>
+
+          <div class="ct02-list">
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project3.html">
+                  <img src="./img/project/pro-03-1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>인터랙션디자인</p>
+                  <p class="headline">다다다 한글놀이</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    &lt;다다다 한글마을&gt;은 한글을 외우는 대신 이야기를 따라가며 스스로 이해하고 참여하는 능동적
+                    <br class="pc-br" />
+                    인터랙티브 학습 게임입니다. 학습자는 터치 블록과 미션 수행을 통해 자연스럽게 한글을 익히고,
+                    <br class="pc-br" />
+                    베트남 아동이 어려워하는 발음과 실생활 표현을 직접 말하며 즉각적인 피드백을 받아 말하기의
+                    <br class="pc-br" />
+                    자신감을 키웁니다. 직접 조작하고 입으로 말하는 체험형 학습이 높은 몰입도와 배운 내용을 실제
+                    <br class="pc-br" />
+                    의사소통으로 빠르게 이루어지도록 합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project3.html">
+                  <img src="./img/project/pro-03-2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>서비스경험디자인</p>
+                  <p class="headline">놀면서 배우는 한글 학습</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    다문화 아동과 비슷한 배경의 캐릭터 ‘주이’ 와 스토리텔링을 통해 한국어가 <br class="pc-br" />
+                    서툰 아동이 놀이처럼 표현과 발음을 익히도록 하며, 가정과 일상에서 한국어 <br class="pc-br" />
+                    사용을 자연스럽게 늘리고 사회적 상호작용의 폭을 넓히도록 합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project3.html">
+                  <img src="./img/project/pro-03-3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>인터페이스디자인</p>
+                  <p class="headline">하이데이즈: 문화 알아보기</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    &lt;하이데이즈(Hai-days)&gt;는 베트남어 ‘둘’을 뜻하는 ‘Hai’와 ‘명절’을 뜻하는 ‘Holidays’의 결합해
+                    <br class="pc-br" />
+                    두 나라의 명절 문화를 함께 다룬다는 의미이다. 한국의 설날과 추석, 베트남의 뗏과 뗏쭝투 등
+                    <br class="pc-br" />
+                    가족행사 중심의 명절을 비교·소개하며 두 문화에 대한 상호 이해를 돕는 인터랙티브 콘텐츠이다.
+                    <br class="pc-br" />
+                    이를 통해 베트남-한국 다문화 아동이 자신의 뿌리가 되는 두 나라의 전통과 문화를 자연스럽게
+                    <br class="pc-br" />
+                    배우고, 정체성을 긍정적으로 형성할 수 있도록 하는 것을 목표로 한다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--팀원 구성 페이지인데, 개인팀일 경우 content03 전체 삭제 하기 ㄱㄱ-->
+    <div class="content03">
+      <div class="ct03-container">
+        <div class="ct02-header">
+          <h1>팀원 구성</h1>
+        </div>
+
+        <div class="ct03-team">
+          <div class="team-list team-1">
+            <div class="list-left">
+              <div class="team-name">
+                <p>
+                  <!-- 한글 이름 -->
+                  박기연
+                  <span class="name-en">
+                    <!--영문 이름 / 영문 이름은 그냥 복붙만 해두면 됨 나중에 CSS로 처리할거-->
+                    park ki-yeon
+                  </span>
+                </p>
+              </div>
+              <div class="team-info">
+                <h4>이메일</h4>
+
+                <!-- 이메일 수정 부분 ↓ -->
+                <p>Kiiyeon13@gmail.com</p>
+                <h4>인스타그램</h4>
+
+                <!-- 인스타그램 아이디 수정 부분 ↓ -->
+                <a href="https://www.instagram.com/yeon_7i/" target="_blank"><p>@yeon_7i</p></a>
+                <h4>팀원</h4>
+
+                <!-- 팀원 수정 부분 ↓ / 1인팀일 경우 '-' 표시로 작성 -->
+                <p>이새연, 이채현</p>
+              </div>
+            </div>
+            <button class="more">
+              <a href="./designer32.html">more <i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+          </div>
+
+          <!--1인 팀일 경우 이 부분 삭제 또는 주석 처리-->
+          <div class="team-list team-2">
+            <div class="list-left">
+              <div class="team-name">
+                <p>이채현 <span class="name-en">lee chae-hyeon</span></p>
+              </div>
+              <div class="team-info">
+                <h4>이메일</h4>
+
+                <!-- 이메일 수정 부분 ↓ -->
+                <p>laura-328@naver.com</p>
+                <h4>인스타그램</h4>
+
+                <!-- 인스타그램 아이디 수정 부분 ↓ -->
+                <a href="https://www.instagram.com/_chaechae28/" target="_blank"><p>@_chaechae28</p></a>
+                <h4>팀원</h4>
+
+                <!-- 팀원 수정 부분 ↓ / 1인팀일 경우 '-' 표시로 작성 -->
+                <p>박기연, 이새연</p>
+              </div>
+            </div>
+            <button class="more">
+              <a href="./designer37.html">more <i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--수정 부분 end-->
+
+    <!--footer-->
+    <footer>
+      <div class="foot-container">
+        <div class="bottom-footer">
+          <div class="foot-left">
+            <img src="../img/foot_logo.png" alt="" />
+            <p>청주대학교 디지털미디어디자인학과<br />제5회 졸업전시회</p>
+          </div>
+          <div class="foot-right">
+            <div class="exh-info">
+              <div class="info-left">
+                <p>전시공간</p>
+                <p>전시일정</p>
+                <p>인스타그램</p>
+                <p>문의전화</p>
+              </div>
+              <div class="info-right">
+                <p>충북 청주시 청원구 안덕벌로 19번길 116</p>
+                <p>2025. 12. 12 — 12. 15</p>
+                <p>@cjudmd_2025</p>
+                <p>043 - 229 - 8660(학과사무실)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-row">
+          <p class="copyright">© 2025, Department of Digital Media Design, Cheongju University. All rights reserved.</p>
+          <div class="sns-icons">
+            <a href="https://youtube.com/channel/UC5275bIPKnUuTG0onFeFsLw?si=ReOEsoZA_fMy-Yib" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.instagram.com/cjudmd_2025/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.cju.ac.kr/dmd/index.do" target="_blank" id="dmdlogo"
+              ><img src="../img/department.png" alt="" width="45px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- GSAP core -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+  </body>
+</html>

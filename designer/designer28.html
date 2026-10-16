@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공( )명 : 청주대학교 디지털미디어디자인학과 제5회 졸업전시회</title>
+
+    <!-- 공통 -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- 전용 -->
+    <link rel="stylesheet" href="./css/designer-detail.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <div class="gnb-logo">
+          <a href="../index.html">
+            <img src="../img/whead_logo.png" alt="" />
+            <p>
+              청주대학교 디지털미디어디자인학과<br />
+              제5회 졸업전시회
+            </p>
+          </a>
+        </div>
+
+        <div class="gnb-menu">
+          <a href="../about/about.html">
+            <p>전시소개</p>
+          </a>
+          <a href="../project/project.html">
+            <p>프로젝트</p>
+          </a>
+          <a href="../designer/designer.html" id="current">
+            <p>디자이너</p>
+          </a>
+          <a href="../archive/archive.html">
+            <p>아카이브</p>
+          </a>
+          <button class="dmd2025" onclick="openExhibitionLink()">
+            <p>2025 전시도록 <i class="fa-solid fa-arrow-right"></i></p>
+          </button>
+
+          <script>
+            function openExhibitionLink() {
+              window.open("https://indd.adobe.com/view/5749a1d9-1fc3-4055-aea8-13508477998d", "_blank");
+            }
+          </script>
+        </div>
+
+        <div class="mobile-button">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+          </label>
+
+          <div class="mobile-menu">
+            <div class="mobile-item-container">
+              <a href="../about/about.html" class="mobile-menu-item">
+                <p>전시소개</p>
+              </a>
+              <a href="../project/project.html" class="mobile-menu-item">
+                <p>프로젝트</p>
+              </a>
+              <a href="../designer/designer.html" class="mobile-menu-item">
+                <p>디자이너</p>
+              </a>
+              <a href="../archive/archive.html" class="mobile-menu-item">
+                <p>아카이브</p>
+              </a>
+              <a class="mobile-menu-item" onclick="openExhibitionLink()">
+                <p>2025 전시도록</p>
+              </a>
+              <div class="mobile-menu-footer">
+                <img src="../img/m-menu.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="content01">
+        <div class="ct01-content">
+          <div class="ct01-left">
+            <button class="back">
+              <a href="./designer.html"> <i class="fa-solid fa-arrow-left"></i> 뒤로가기 </a>
+            </button>
+            <div class="profile">
+              <!--스프레드시트 가장 왼쪽에 있는 번호로 png파일 이름 변경하기 / 강유림일 경우 -> './img/handwriting/1.png'-->
+              <img src="./img/profile/28.png" alt="" />
+            </div>
+          </div>
+
+          <div class="ct01-right">
+            <div class="ct01-right-header">
+              <!--스프레드시트 가장 왼쪽에 있는 번호로 png파일 이름 변경하기 / 강유림일 경우 -> './img/handwriting/1.png'-->
+              <p>나는 &#40; <img src="./img/handwriting/28.png" alt="" /> &#41; 로 공명한다.</p>
+            </div>
+
+            <!----------------->
+            <!--수정 부분 start-->
+            <!----------------->
+            <div class="ct01-right-name">
+              <p>
+                <!--한글 이름 수정-->
+                오효진
+                <span class="name-en">
+                  <!--영문 이름 / 영문 이름은 그냥 복붙만 해두면 됨 나중에 CSS로 처리할거-->oh hyo-jin
+                </span>
+              </p>
+            </div>
+
+            <!--디자이너 세부 정보 / 보내준 스프레드시트 보고 작성하면 됨-->
+            <div class="ct01-right-info">
+              <h4>이메일</h4>
+
+              <!-- 이메일 수정 부분 ↓ -->
+              <p>ryojinoh@gmail.com</p>
+              <h4>인스타그램</h4>
+
+              <!-- 인스타그램 아이디 수정 부분 ↓ -->
+              <a href="https://www.instagram.com/ryojin14/" target="_blank"><p>@ryojin14</p></a>
+              <h4>팀원</h4>
+
+              <!-- 팀원 수정 부분 ↓ / 팀 프로젝트 별로 따로 묶어놓은 부분 있으니 그거 보고 작성 / 1인팀일 경우 '-' 표시 -->
+              <p>나원호</p>
+            </div>
+
+            <!--졸업전시 소감 작성 부분 / br태그 작성 없이 그냥 복붙 ㄱㄱ-->
+            <div class="ct01-right-desc">
+              <p>
+                졸업 전시를 준비하면서 힘들기도 했지만 팀원과 함께 끝까지 해냈다는 게 뿌듯합니다. 처음엔 막막했지만
+                구현하는 과정에서 제 한계를 시험해볼 수 있었던 값진 시간이었습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- content02는 일단 냅두기, 수요일 교수님 컨펌 이후에 레이아웃 수정하던가 할듯-->
+    <section>
+      <div class="content02">
+        <div class="ct02-container">
+          <div class="ct02-header">
+            <h1>전시 목록</h1>
+          </div>
+
+          <div class="ct02-list">
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project14.html">
+                  <img src="./img/project/pro-14-1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>인터랙션디자인</p>
+                  <p class="headline">곶자왈 : 검은뿌리의 부활</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    곶자왈에서 벌어진 훼손 문제를 스토리로 재구성해 VR로 체험하는 게임으로, 플레이어는 숲의 상징적
+                    <br class="pc-br" />
+                    위기와 그 안의 서사를 따라가며 곶자왈의 가치와 존재 의미를 새롭게 느끼게 됩니다. 단순한 관람이
+                    <br class="pc-br" />
+                    아니라 서사 속에 직접 참여하며 자연에 대한 감각과 시선을 다시
+                    <br class="pc-br" />
+                    정렬하도록 설계된 체험형 콘텐츠입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project14.html">
+                  <img src="./img/project/pro-14-2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>서비스경험디자인</p>
+                  <p class="headline">곶자왈: 위기의 숲</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    곶자왈이 점점 잊혀지는 현실 속에서 사람들이 이 숲의 가치와 위기를 더 쉽게 느끼고 이해할 수 있는
+                    <br class="pc-br" />
+                    새로운 방식이 필요하다고 생각했습니다. 특히 VR은 환경 문제를 단순 정보가 아닌 체험으로
+                    <br class="pc-br" />
+                    받아들이게 하는 강한 몰입성을 지녔고, 게이미피케이션은 작은 실천을 지속 가능한 행동으로
+                    <br class="pc-br" />
+                    전환시키는 데 효과적이라고 판단했습니다. 그래서 체험과 실천을 연결하는 콘텐츠를 통해
+                    <br class="pc-br" />
+                    곶자왈을 다시 바라보게 만들고자 이 프로젝트를 진행했습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project14.html">
+                  <img src="./img/project/pro-14-3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>인터페이스디자인</p>
+                  <p class="headline">나만의 곶자왈 키우기</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    이 앱은 게이미피케이션을 통해 일상의 작은 환경 실천을 유도하고, 모은 포인트를 ESG 기부로 연결해
+                    <br class="pc-br" />
+                    실제 변화를 만들어가는 참여형 환경 행동 플랫폼이다. 사용자는 게임처럼 쉽게 참여하면서도 자신의
+                    <br class="pc-br" />
+                    행동이 곧바로 사회적 가치로 환원되는 흐름을 경험하게 됩니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--팀원 구성 페이지인데, 개인팀일 경우 content03 전체 삭제 하기 ㄱㄱ-->
+    <div class="content03">
+      <div class="ct03-container">
+        <div class="ct02-header">
+          <h1>팀원 구성</h1>
+        </div>
+
+        <div class="ct03-team">
+          <div class="team-list team-1">
+            <div class="list-left">
+              <div class="team-name">
+                <p>
+                  <!-- 한글 이름 -->
+                  나원호
+                  <span class="name-en">
+                    <!--영문 이름 / 영문 이름은 그냥 복붙만 해두면 됨 나중에 CSS로 처리할거-->
+                    na won-ho
+                  </span>
+                </p>
+              </div>
+              <div class="team-info">
+                <h4>이메일</h4>
+
+                <!-- 이메일 수정 부분 ↓ -->
+                <p>wonho120687@naver.com</p>
+                <h4>인스타그램</h4>
+
+                <!-- 인스타그램 아이디 수정 부분 ↓ -->
+                <a href="https://www.instagram.com/nweonho/" target="_blank"><p>@nweonho</p></a>
+                <h4>팀원</h4>
+
+                <!-- 팀원 수정 부분 ↓ / 1인팀일 경우 '-' 표시로 작성 -->
+                <p>오효진</p>
+              </div>
+            </div>
+            <button class="more">
+              <a href="./designer14.html">more <i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--수정 부분 end-->
+
+    <!--footer-->
+    <footer>
+      <div class="foot-container">
+        <div class="bottom-footer">
+          <div class="foot-left">
+            <img src="../img/foot_logo.png" alt="" />
+            <p>청주대학교 디지털미디어디자인학과<br />제5회 졸업전시회</p>
+          </div>
+          <div class="foot-right">
+            <div class="exh-info">
+              <div class="info-left">
+                <p>전시공간</p>
+                <p>전시일정</p>
+                <p>인스타그램</p>
+                <p>문의전화</p>
+              </div>
+              <div class="info-right">
+                <p>충북 청주시 청원구 안덕벌로 19번길 116</p>
+                <p>2025. 12. 12 — 12. 15</p>
+                <p>@cjudmd_2025</p>
+                <p>043 - 229 - 8660(학과사무실)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-row">
+          <p class="copyright">© 2025, Department of Digital Media Design, Cheongju University. All rights reserved.</p>
+          <div class="sns-icons">
+            <a href="https://youtube.com/channel/UC5275bIPKnUuTG0onFeFsLw?si=ReOEsoZA_fMy-Yib" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.instagram.com/cjudmd_2025/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.cju.ac.kr/dmd/index.do" target="_blank" id="dmdlogo"
+              ><img src="../img/department.png" alt="" width="45px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- GSAP core -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+  </body>
+</html>

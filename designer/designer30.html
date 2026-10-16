@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>공( )명 : 청주대학교 디지털미디어디자인학과 제5회 졸업전시회</title>
+
+    <!-- 공통 -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- 전용 -->
+    <link rel="stylesheet" href="./css/designer-detail.css" />
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="head-container">
+        <div class="gnb-logo">
+          <a href="../index.html">
+            <img src="../img/whead_logo.png" alt="" />
+            <p>
+              청주대학교 디지털미디어디자인학과<br />
+              제5회 졸업전시회
+            </p>
+          </a>
+        </div>
+
+        <div class="gnb-menu">
+          <a href="../about/about.html">
+            <p>전시소개</p>
+          </a>
+          <a href="../project/project.html">
+            <p>프로젝트</p>
+          </a>
+          <a href="../designer/designer.html" id="current">
+            <p>디자이너</p>
+          </a>
+          <a href="../archive/archive.html">
+            <p>아카이브</p>
+          </a>
+          <button class="dmd2025" onclick="openExhibitionLink()">
+            <p>2025 전시도록 <i class="fa-solid fa-arrow-right"></i></p>
+          </button>
+
+          <script>
+            function openExhibitionLink() {
+              window.open("https://indd.adobe.com/view/5749a1d9-1fc3-4055-aea8-13508477998d", "_blank");
+            }
+          </script>
+        </div>
+
+        <div class="mobile-button">
+          <input type="checkbox" id="menu-toggle" />
+          <label for="menu-toggle" class="hamburger">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+          </label>
+
+          <div class="mobile-menu">
+            <div class="mobile-item-container">
+              <a href="../about/about.html" class="mobile-menu-item">
+                <p>전시소개</p>
+              </a>
+              <a href="../project/project.html" class="mobile-menu-item">
+                <p>프로젝트</p>
+              </a>
+              <a href="../designer/designer.html" class="mobile-menu-item">
+                <p>디자이너</p>
+              </a>
+              <a href="../archive/archive.html" class="mobile-menu-item">
+                <p>아카이브</p>
+              </a>
+              <a class="mobile-menu-item" onclick="openExhibitionLink()">
+                <p>2025 전시도록</p>
+              </a>
+              <div class="mobile-menu-footer">
+                <img src="../img/m-menu.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="content01">
+        <div class="ct01-content">
+          <div class="ct01-left">
+            <button class="back">
+              <a href="./designer.html"> <i class="fa-solid fa-arrow-left"></i> 뒤로가기 </a>
+            </button>
+            <div class="profile">
+              <!--스프레드시트 가장 왼쪽에 있는 번호로 png파일 이름 변경하기 / 강유림일 경우 -> './img/handwriting/1.png'-->
+              <img src="./img/profile/30.png" alt="" />
+            </div>
+          </div>
+
+          <div class="ct01-right">
+            <div class="ct01-right-header">
+              <!--스프레드시트 가장 왼쪽에 있는 번호로 png파일 이름 변경하기 / 강유림일 경우 -> './img/handwriting/1.png'-->
+              <p>나는 &#40; <img src="./img/handwriting/30.png" alt="" /> &#41; 로 공명한다.</p>
+            </div>
+
+            <!----------------->
+            <!--수정 부분 start-->
+            <!----------------->
+            <div class="ct01-right-name">
+              <p>
+                <!--한글 이름 수정-->
+                유은비
+                <span class="name-en">
+                  <!--영문 이름 / 영문 이름은 그냥 복붙만 해두면 됨 나중에 CSS로 처리할거-->yu eun-bi
+                </span>
+              </p>
+            </div>
+
+            <!--디자이너 세부 정보 / 보내준 스프레드시트 보고 작성하면 됨-->
+            <div class="ct01-right-info">
+              <h4>이메일</h4>
+
+              <!-- 이메일 수정 부분 ↓ -->
+              <p>eunbi-oo@naver.com</p>
+              <h4>인스타그램</h4>
+
+              <!-- 인스타그램 아이디 수정 부분 ↓ -->
+              <a href="https://www.instagram.com/o0obi/" target="_blank"><p>@o0obi</p></a>
+              <h4>팀원</h4>
+
+              <!-- 팀원 수정 부분 ↓ / 팀 프로젝트 별로 따로 묶어놓은 부분 있으니 그거 보고 작성 / 1인팀일 경우 '-' 표시 -->
+              <p>곽초은, 김현지</p>
+            </div>
+
+            <!--졸업전시 소감 작성 부분 / br태그 작성 없이 그냥 복붙 ㄱㄱ-->
+            <div class="ct01-right-desc">
+              <p>
+                처음 해보는 경험이라 서툰 부분도 많았지만, 서로 의지하며 여기까지 올 수 있었던 시간이 오래 기억에
+                <br class="pc-br" />
+                남을 것 같습니다. 함께 부딪히고 성장한 이번 졸업전시를 발판 삼아 앞으로 더 단단하게 나아가고
+                <br class="pc-br" />
+                싶습니다. 그동안 얻은 배움과 마음들을 오래 간직하겠습니다. 모두 파이팅!!!! ㅎㅎ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- content02는 일단 냅두기, 수요일 교수님 컨펌 이후에 레이아웃 수정하던가 할듯-->
+    <section>
+      <div class="content02">
+        <div class="ct02-container">
+          <div class="ct02-header">
+            <h1>전시 목록</h1>
+          </div>
+
+          <div class="ct02-list">
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project17.html">
+                  <img src="./img/project/pro-17-1.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>인터랙션디자인</p>
+                  <p class="headline">RE:4·3</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    제주 4·3 다랑쉬굴은 생존을 위해 숨었던 사람들의 흔적이 남은 중요한 장소지만, 관광 중심의
+                    <br class="pc-br" />
+                    환경 속에서 충분히 조명되지 못하고 잊혀지고 있습니다. VR 체험은 단순한 관람이 아니라 공간의
+                    <br class="pc-br" />
+                    흔적과 기억을 직접 마주하도록 설계되어 있으며, 참여자는 촛불을 들고 어둠 속을 걸으며 진실을
+                    <br class="pc-br" />
+                    찾아가는 경험을 하게 됩니다. 촛불을 놓는 순간은 추모가 되며, 기억을 어떻게 이어갈지 묻습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project17.html">
+                  <img src="./img/project/pro-17-2.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>서비스경험디자인</p>
+                  <p class="headline">RE:4·3</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    전시에서 느낀 감정이 일상에서도 이어지길 바라는 마음으로 만들어진 이 키트는, 사소한 행동을
+                    <br class="pc-br" />
+                    통해 기억이 개인의 시간 속에 자연스럽게 자리 잡도록 돕습니다. 동백꽃 엽서와 키링은 그 기억을
+                    <br class="pc-br" />
+                    손에 잡히는 형태로 남기고, 동백꽃 씨앗을 직접 심고 돌보는 과정은 기억이 일상 속에서 꾸준히
+                    <br class="pc-br" />
+                    이어지게 합니다. 이러한 흐름은 단순한 추모에 머물지 않도록 하고, 삶 속에서 살아 움직이게 합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="ct02-list-left">
+                <a href="../project/project17.html">
+                  <img src="./img/project/pro-17-3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="ct02-list-right">
+                <div class="list-header">
+                  <p>인터페이스디자인</p>
+                  <p class="headline">RE:4·3</p>
+                </div>
+                <div class="list-desc">
+                  <p>
+                    웹사이트는 단순한 역사 소개를 넘어 제주 4·3을 바르게 이해하도록 이끕니다. 당시 기록과 증언을
+                    <br class="pc-br" />
+                    토대로 흐름을 따라가며 사건을 깊이 있게 바라보게 합니다. 이는 스스로 판단하고 생각할 수 있도록
+                    <br class="pc-br" />
+                    도움을 줍니다. 또한 제주 4·3이 오늘의 우리에게 어떤 의미를 갖는지 되짚어 줍니다. 과거의 상처들이
+                    <br class="pc-br" />
+                    오늘의 현실에 어떤 흔적을 남겼는지 되새기도록 하고, 기억할 이유를 다시 확인하도록 돕습니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--팀원 구성 페이지인데, 개인팀일 경우 content03 전체 삭제 하기 ㄱㄱ-->
+    <div class="content03">
+      <div class="ct03-container">
+        <div class="ct02-header">
+          <h1>팀원 구성</h1>
+        </div>
+
+        <div class="ct03-team">
+          <div class="team-list team-1">
+            <div class="list-left">
+              <div class="team-name">
+                <p>
+                  <!-- 한글 이름 -->
+                  곽초은
+                  <span class="name-en">
+                    <!--영문 이름 / 영문 이름은 그냥 복붙만 해두면 됨 나중에 CSS로 처리할거-->
+                    kwak cho-eun
+                  </span>
+                </p>
+              </div>
+              <div class="team-info">
+                <h4>이메일</h4>
+
+                <!-- 이메일 수정 부분 ↓ -->
+                <p>kcekce02@gmail.com</p>
+                <h4>인스타그램</h4>
+
+                <!-- 인스타그램 아이디 수정 부분 ↓ -->
+                <a href="https://www.instagram.com/coeungwag/" target="_blank"><p>@coeungwag</p></a>
+                <h4>팀원</h4>
+
+                <!-- 팀원 수정 부분 ↓ / 1인팀일 경우 '-' 표시로 작성 -->
+                <p>김현지, 유은비</p>
+              </div>
+            </div>
+            <button class="more">
+              <a href="./designer3.html">more <i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+          </div>
+
+          <!--1인 팀일 경우 이 부분 삭제 또는 주석 처리-->
+          <div class="team-list team-2">
+            <div class="list-left">
+              <div class="team-name">
+                <p>김현지 <span class="name-en">kim hyeon-ji</span></p>
+              </div>
+              <div class="team-info">
+                <h4>이메일</h4>
+
+                <!-- 이메일 수정 부분 ↓ -->
+                <p>khj20020104@gmail.com</p>
+                <h4>인스타그램</h4>
+
+                <!-- 인스타그램 아이디 수정 부분 ↓ -->
+                <a href="https://www.instagram.com/itsmyenji/" target="_blank"><p>@itsmyenji</p></a>
+                <h4>팀원</h4>
+
+                <!-- 팀원 수정 부분 ↓ / 1인팀일 경우 '-' 표시로 작성 -->
+                <p>곽초은, 유은비</p>
+              </div>
+            </div>
+            <button class="more">
+              <a href="./designer12.html">more <i class="fa-solid fa-arrow-right"></i></a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--수정 부분 end-->
+
+    <!--footer-->
+    <footer>
+      <div class="foot-container">
+        <div class="bottom-footer">
+          <div class="foot-left">
+            <img src="../img/foot_logo.png" alt="" />
+            <p>청주대학교 디지털미디어디자인학과<br />제5회 졸업전시회</p>
+          </div>
+          <div class="foot-right">
+            <div class="exh-info">
+              <div class="info-left">
+                <p>전시공간</p>
+                <p>전시일정</p>
+                <p>인스타그램</p>
+                <p>문의전화</p>
+              </div>
+              <div class="info-right">
+                <p>충북 청주시 청원구 안덕벌로 19번길 116</p>
+                <p>2025. 12. 12 — 12. 15</p>
+                <p>@cjudmd_2025</p>
+                <p>043 - 229 - 8660(학과사무실)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom-row">
+          <p class="copyright">© 2025, Department of Digital Media Design, Cheongju University. All rights reserved.</p>
+          <div class="sns-icons">
+            <a href="https://youtube.com/channel/UC5275bIPKnUuTG0onFeFsLw?si=ReOEsoZA_fMy-Yib" target="_blank"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a href="https://www.instagram.com/cjudmd_2025/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.cju.ac.kr/dmd/index.do" target="_blank" id="dmdlogo"
+              ><img src="../img/department.png" alt="" width="45px"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- GSAP core -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="../js/smooth-scroll.js"></script>
+  </body>
+</html>
